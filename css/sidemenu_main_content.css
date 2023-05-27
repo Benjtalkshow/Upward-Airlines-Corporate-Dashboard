@@ -95,11 +95,12 @@
 
 .sidemenu .history {
     background: var(--closeToBell);
-    /* width: 100%;
-    position: absolute; */
-    /* bottom: 0; */
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+     /* bottom: 0;  */
     /* top: 42.5em; */
-    margin-top: 15.2em;
+    /* margin-top: 15.2em; */
 }
 
 .sidemenu .history li {
