@@ -7,7 +7,7 @@
 
 .sidemenu {
     width: 200px;
-    height: 100vh;
+    height: 100%;
     margin-top: 3.8em;
     position: fixed;
     background-color: var(--Bell);
@@ -95,6 +95,10 @@
 
 .sidemenu .history {
     background: var(--closeToBell);
+    /* width: 100%;
+    position: absolute; */
+    /* bottom: 0; */
+    /* top: 42.5em; */
     margin-top: 15.2em;
 }
 
