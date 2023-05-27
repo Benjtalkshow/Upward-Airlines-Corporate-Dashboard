@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/sidemenu_main_content.css">
     <link rel="stylesheet" href="/css/main_content.css">
     <script src="https://kit.fontawesome.com/4c55df3467.js" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://www.gstatic.com/charts/loader.js"></script> -->
     <title>Nnaji Benjamin | Dashboard 2</title>
 </head>
 
@@ -112,9 +113,9 @@
                 </div>
             </div>
             <div class="container">
-                <div class="col col-1">
-                    <img src="/assets/images/7.jpg" alt="7" class="alt">
-                </div>
+                <canvas class="col col-1">
+                    <canvas id="myChart"></canvas>
+                </canvas>
                 <div class="col col-1">
                     <h1>column</h1>
                 </div>
@@ -156,7 +157,6 @@
         </div>
 
     </div>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"></script> -->
     <script src="js/charts.js"></script>
     <script src="/js/app.js"></script>
 </body>
