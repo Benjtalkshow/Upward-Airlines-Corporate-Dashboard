@@ -11,6 +11,8 @@
     margin-top: 3.8em;
     position: fixed;
     background-color: var(--Bell);
+    transition: transform 1s ease-in-out;
+    /* display: none; */
 }
 
 .mainContent {
@@ -18,12 +20,15 @@
     background-color: var(--Ashes);
     padding: 15px;
     margin-top: 3.8em;
-    margin-left:  200px;
-}
-.mainContent.margin_left {
     margin-left: 200px;
+    /* transform: translateX(200px); */
+    transition: margin-left .3s ease-in-out;
 }
 
+.mainContent.margin_left {
+    margin-left: 200px;
+    /* transform: translateX(200px); */
+}
 
 /* SIDEMENU STYLING SECTION */
 .logo,
@@ -56,7 +61,8 @@
     transition: ease-in-out .5s;
     display: none;
 }
-.menu_list .dropDown.active{
+
+.menu_list .dropDown.active {
     display: block;
 }
 
@@ -98,7 +104,7 @@
     width: 100%;
     bottom: 0;
     position: absolute;
-     /* bottom: 0;  */
+    /* bottom: 0;  */
     /* top: 42.5em; */
     /* margin-top: 15.2em; */
 }
@@ -111,19 +117,22 @@
 }
 
 /* MEDIA QUERY FOR THE SIDE BAR MENU */
-@media screen and (max-width:1072px) {
-}
+@media screen and (max-width:1072px) {}
+
 @media screen and (max-width: 1018px) {
     .sidemenu {
-      opacity: 0;
-      transform: translateX(-100%);
-      transition: opacity 0.3s ease, transform 0.3s ease;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 0.3s ease, transform 0.3s ease;
     }
+
     .mainContent {
         margin-left: 0;
+        /* transform: translateX(0px); */
     }
+
     .sidemenu.displayed {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
-  }
+}

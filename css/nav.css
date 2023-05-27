@@ -9,8 +9,9 @@
 
 body {
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    overflow-x: hidden;
+    /* overflow: hidden; */
 }
+
 
 :root {
     --whiteColor: white;
@@ -29,6 +30,7 @@ body {
 /* NAVBAR STYLING */
 .navbar {
     position: fixed;
+    z-index: 99;
     width: 100%;
     padding: 15px 10px;
     display: flex;
@@ -92,6 +94,7 @@ transition: ease-in 1s;
 .navbar .left-nav div i {
     padding-right: 2px;
 }
+
 .navbar .left-nav div {
     margin-right: 8px;
     padding: 2px;

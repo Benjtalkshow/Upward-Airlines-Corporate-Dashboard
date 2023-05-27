@@ -75,9 +75,14 @@
 .container .col {
   background-color: #f0f0f0;
 }
+
 .container .col-1 {
   height: 250px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .swipe {
   display: flex;
   justify-content: center;
