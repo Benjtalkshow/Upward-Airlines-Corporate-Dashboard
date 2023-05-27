@@ -102,7 +102,7 @@
 .sidemenu .history {
     background: var(--closeToBell);
     width: 100%;
-    bottom: 0;
+    bottom: 60;
     position: absolute;
     /* bottom: 0;  */
     /* top: 42.5em; */
@@ -135,4 +135,7 @@
         opacity: 1;
         transform: translateX(0);
     }
+}
+@media screen and (max-width: 480) {
+    
 }

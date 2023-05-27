@@ -3,6 +3,7 @@ const nav_left_icons = document.querySelectorAll('.fa-left-icon');
 const nav_right_icons = document.querySelectorAll('.fa-right-icon');
 
 
+// FUNCTIONALITY FOR THE TWO SEARCH ICON
 function glassClickOne() {
     if (glass.classList.contains('glass')) {
         const search = document.querySelector('.search')
@@ -27,6 +28,7 @@ function glassClickTwo() {
     }
 }
 
+// DROP DOWN FUNCTIONALITY FOR THE NAVBAR ICONS SUCH AS SCORECARDS, MAPS, OBJECTIVES ETC
 nav_left_icons.forEach((el) => {
     el.preventDefault;
     el.addEventListener('click', () => {
@@ -47,7 +49,7 @@ nav_left_icons.forEach((el) => {
     })
 })
 
-
+// DROP FUNCTIONALITY FOR THE ICONS ON THE SIDEBAR
 const sideDrop = document.querySelectorAll('.sidedrop')
 sideDrop.forEach((sidedrop) => {
     sidedrop.addEventListener('click', () => {
@@ -72,7 +74,7 @@ sideDrop.forEach((sidedrop) => {
     })
 })
 
-
+// ADDING DROP DOWN HTML LIST ELEMENT FOR THE NAVBAR WITH JAVASCRIPT
 function universalist() {
     const ul = document.querySelectorAll('.list')
     ul.forEach((li) => {
@@ -85,6 +87,7 @@ function universalist() {
 }
 universalist();
 
+// ADDING DROP DOWN HTML LIST ELEMENT FOR THE SIDEBAR WITH JAVASCRIPT
 function universalDropDown() {
     const dropDown = document.querySelectorAll('.dropDown')
     dropDown.forEach((del) => {
@@ -99,6 +102,7 @@ function universalDropDown() {
 
 universalDropDown();
 
+//HIDE AND DISPALY FUNCTIONALITY FOR THE SIDE BAR
 const bar = document.querySelector('.fa-bars');
 const menu = document.querySelector('.sidemenu');
 const mainContent = document.querySelector('.mainContent')
