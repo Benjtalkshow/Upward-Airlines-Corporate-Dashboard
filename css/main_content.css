@@ -160,27 +160,34 @@ transition: ease-in 1s;
 
 
 /* MEDIA QUERY FOR INSIDE NAV BAR */
-@media screen and (max-width: 419px) {
-    .searching .fa-magnifying-glass,
-     .searh_input {
-        display: none;
-     }
-.searchbar .star {
-    display: none;
-}
-}
+
 @media screen and (max-width: 1422px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
       }
 }
+@media screen and (max-width: 1018px) {
+  .administrator {
+     margin-left: 0;
+  }   
+ }
 @media screen and (max-width: 760px) {
     .container {
         grid-template-columns: repeat(1, 1fr);
       }
 }
-@media screen and (max-width: 1018px) {
- .administrator {
-    margin-left: 0;
- }   
+
+@media screen and (max-wdith: 720px) {
+  .searching .search_input {
+    display: none;
+  }
+}
+@media screen and (max-width: 419px) {
+  .searching .fa-magnifying-glass,
+   .searh_input {
+      display: none;
+   }
+.searchbar .star {
+  display: none;
+}
 }
