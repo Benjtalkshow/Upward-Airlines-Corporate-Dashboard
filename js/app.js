@@ -30,24 +30,23 @@ function glassClickTwo() {
 
 // DROP DOWN FUNCTIONALITY FOR THE NAVBAR ICONS SUCH AS SCORECARDS, MAPS, OBJECTIVES ETC
 nav_left_icons.forEach((el) => {
-    el.preventDefault;
     el.addEventListener('click', () => {
-        // console.log(el);
         const child = el.lastElementChild;
         if (child.classList.contains('display')) {
             child.style.display = 'none';
-            child.classList.remove('display')
-
+            child.classList.remove('display');
         } else {
-            const ul = document.querySelectorAll('.list')
+            const ul = document.querySelectorAll('.list');
             ul.forEach((li) => {
                 li.style.display = 'none';
-            })
+                li.classList.remove('display'); // Add this line to remove the class from all dropdowns
+            });
             child.style.display = 'block';
-            child.classList.add('display')
+            child.classList.add('display');
         }
-    })
-})
+    });
+});
+
 
 // DROP FUNCTIONALITY FOR THE ICONS ON THE SIDEBAR
 const sideDrop = document.querySelectorAll('.sidedrop')
@@ -65,6 +64,7 @@ sideDrop.forEach((sidedrop) => {
             const ul = document.querySelectorAll('.dropDown')
             ul.forEach((dp) => {
                 dp.style.display = 'none';
+                dp.classList.remove('display')
 
             })
             nextEl.style.display = 'block';
@@ -73,6 +73,8 @@ sideDrop.forEach((sidedrop) => {
         }
     })
 })
+
+
 
 // ADDING DROP DOWN HTML LIST ELEMENT FOR THE NAVBAR WITH JAVASCRIPT
 function universalist() {
