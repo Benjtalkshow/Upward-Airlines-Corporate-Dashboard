@@ -1,0 +1,184 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+}
+
+body {
+    font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+:root {
+    --whiteColor: white;
+    --blackColor: black;
+    --closeToGreen: #1ab395;
+    --Ashes: #dddcde;
+    --closeTorange: #f9962c;
+    --Bell: #333337;
+    --closeToBell: #283845;
+    --closeToBlue: #0b7eca;
+    --Cs: #f2086d;
+    --yellowColor: yellow;
+    --greenColor: green;
+    --redColor: red;
+}
+/* NAVBAR STYLING */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--whiteColor);
+    /* box-shadow: 0px 2px 2px 0px rgba(3, 3, 3, 0.199); */
+}
+
+/* EVERYTHING ABOUT STYLING LEFT CONTNENT IN THE NAVBAR */
+.navbar .left-nav i {
+    padding: 5px;
+    border-radius: 2px;
+}
+.navbar .left-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.left-nav .fa-bars {
+    z-index: 99 ;
+    cursor: pointer;
+}
+
+.left-nav input {
+padding: 5px;
+border: 2px solid var(--closeToGreen);
+outline: none;
+margin-right: 8px;
+display: none;
+transition: ease-in 1s;
+}
+.left-nav  ul {
+    top: 3.8em;
+    width: fit-content;
+    position: absolute;
+    background-color: #1ab395;
+    display: none;
+    transition: transform 0.5s all;
+}
+.left-nav ul li {
+    padding: 5px 1.5em;
+    text-align: left;
+    list-style: none;
+    color: var(--whiteColor);
+    
+}
+.left-nav ul li:hover {
+    background-color: var(--Ashes);
+}
+.navbar .fa-bars {
+    margin-right: 8px;
+    padding: 8px;
+     background-color: var(--closeToGreen);
+}
+.navbar .fa-magnifying-glass {
+    margin-right: 8px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: var(--closeToBlue);  
+}
+.navbar .left-nav div i {
+    padding-right: 2px;
+}
+.navbar .left-nav div {
+    margin-right: 8px;
+    padding: 2px;
+    border-radius: 2px;
+    color: var(--Bell);
+    background-color: var(--Ashes);
+}
+.navbar .left-nav .measures-span {
+    color: var(--whiteColor);
+    background-color: var(--closeToGreen);
+}
+.navbar .left-nav .fa-left-icon {
+    cursor: pointer;
+}
+
+/* EVERYTHING ABOUT STYLING RIGHT CONTENT IN THE NAVBAR */
+.navbar .right-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar .right-nav i {
+    padding: 5px;
+    margin-right:8px ;
+    border-radius: 2px;
+}
+.navbar .right-nav .fa-right-from-bracket {
+    background-color: var(--closeToGreen);
+}
+.navbar .right-nav .launch {
+    padding: 5px;
+    background-color: var(--closeTorange);
+}
+.navbar .right-nav span {
+    margin-right: 18px;
+    padding: 5px;
+    border-radius: 50%;
+    color: var(--whiteColor);
+    background-color: var(--Cs);
+}
+.navbar .right-nav .fa-right-icon {
+    cursor: pointer;
+}
+
+/* EVERYTHING ABOUT NAVBAR MEDIA QUERY */
+@media screen and (max-width: 1113px) {
+    .navbar .left-nav .actions {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 977px) {
+    .navbar .left-nav .initiative {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 858px) {
+    .navbar .left-nav .measures-span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 744px) {
+    .navbar .left-nav .obj {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    .navbar .left-nav .maps {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 534px) {
+    .navbar .left-nav .scorecards {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .navbar .right-nav .fa-right-from-bracket,
+    .launch {
+        display: none;
+    }
+    .navbar .right-nav .launch {
+        display: none;
+    }
+}

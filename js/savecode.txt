@@ -1,0 +1,33 @@
+const sideDrop = document.querySelectorAll('.sidedrop')
+sideDrop.forEach((sidedrop, index) => {
+    sidedrop.addEventListener('click', () => {
+
+
+
+        openDiv(sidedrop, index)
+    })
+})
+
+function openDiv(sidedrop, theindex) {
+    const dropdown = document.querySelectorAll('.dropDown')
+    const angle = document.querySelectorAll('.angle')
+    angle.forEach((e, index) => {
+        dropdown.forEach((elm, ind) => {
+            if (theindex == index) {
+                if (theindex === ind) {
+                    if (!elm.classList.contains('on')) {
+                        elm.classList.add('active')
+                        elm.classList.add('on')
+                        e.classList.add('fa-chevron-up')
+                        e.classList.remove('fa-chevron-down')
+                    } else {
+                        elm.classList.remove('active')
+                        elm.classList.remove('on')
+                        e.classList.remove('fa-chevron-up')
+                        e.classList.add('fa-chevron-down')
+                    }
+                }
+            }
+        })
+    })
+}

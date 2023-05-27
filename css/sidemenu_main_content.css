@@ -1,0 +1,125 @@
+.sideMenu_mainContent {
+    display: flex;
+    width: 100%;
+    background-color: var(--Ashes);
+    flex-wrap: wrap;
+}
+
+.sidemenu {
+    width: 200px;
+    height: 100vh;
+    margin-top: 3.8em;
+    position: fixed;
+    background-color: var(--Bell);
+}
+
+.mainContent {
+    width: 100%;
+    background-color: var(--Ashes);
+    padding: 15px;
+    margin-top: 3.8em;
+    margin-left:  200px;
+}
+.mainContent.margin_left {
+    margin-left: 200px;
+}
+
+
+/* SIDEMENU STYLING SECTION */
+.logo,
+.date {
+    background-color: var(--closeToBell);
+    padding: 10px;
+    text-align: center;
+    color: var(--whiteColor);
+    line-height: 1;
+    border-bottom: 2px solid var(--closeToBell);
+    cursor: pointer;
+}
+
+.date span {
+    padding: 0 3.2em;
+}
+
+.menu_list li {
+    list-style: none;
+    color: var(--whiteColor);
+    padding: 15px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.menu_list .dropDown {
+    border-left: 4px solid var(--closeToGreen);
+    transition: ease-in-out .5s;
+    display: none;
+}
+.menu_list .dropDown.active{
+    display: block;
+}
+
+.menu_list li.inner_list {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 5px !important;
+    padding-bottom: 0px !important;
+    background-color: transparent !important;
+    border-left: none !important;
+    color: var(--whiteColor) !important;
+}
+
+.menu_list li.inner_list a:hover {
+    color: var(--closeToGreen);
+}
+
+.menu_list li .angle {
+    margin-left: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu_list li:hover {
+    background-color: var(--closeToBell);
+    border-left: 4px solid var(--closeToGreen);
+}
+
+.menu_list li a,
+.sidemenu .history li a {
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--whiteColor);
+    padding: 0 8px;
+}
+
+.sidemenu .history {
+    background: var(--closeToBell);
+    margin-top: 15.2em;
+}
+
+.sidemenu .history li {
+    display: flex;
+    list-style: none;
+    padding: 15px;
+    color: var(--whiteColor);
+}
+
+/* MEDIA QUERY FOR THE SIDE BAR MENU */
+@media screen and (max-width:1072px) {
+}
+@media screen and (max-width: 1018px) {
+    .sidemenu {
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .mainContent {
+        margin-left: 0;
+    }
+    .sidemenu.displayed {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

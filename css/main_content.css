@@ -1,0 +1,186 @@
+.mainContent .searchbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: var(--Bell);
+    justify-content: space-between;
+}
+.searchbar .searching {
+    display: flex;
+    gap: 8px;
+}
+.searchbar .star .fa-star  {
+    padding: 8px;
+    cursor: pointer;
+    background-color: var(--closeTorange);
+    border-radius: 2px;
+}
+.searchbar .star {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.star button {
+    cursor: pointer;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    padding: 8px;
+    color: var(--whiteColor);
+    background-color: var(--closeToGreen);
+}
+.star button .fa-scale-balanced {
+    padding-right: 25px;
+}
+.searching .fa-magnifying-glass {
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid var(--Bell);
+    border-radius: 2px;
+}
+.searching h3 span {
+    font-size: .5em;
+}
+.searching  input {
+padding: 5px;
+border: 2px solid var(--closeToGreen);
+background-color: transparent;
+outline: none;
+margin-right: 8px;
+display: none;
+transition: ease-in 1s;
+}
+.searching input::placeholder {
+    color: var(--Bell);
+}
+
+/* THIS SECTION STYLES THE CONTAINER OF ALL THE CHART BOXES */
+.container {
+    margin-top: 8px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .container .col {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  .container .col-1 {
+    height:250px ;
+  }
+  .swipe {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .swipe .span_1 {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    display: block;
+    text-align: center;
+    padding: 5px 8px;
+    background-color: var(--closeToBlue);
+    cursor: pointer;
+    color: var(--whiteColor);
+  }
+  .swipe .span_2 {
+    display: block;
+    text-align: center;
+    padding: 5px 8px;
+    background-color: var(--whiteColor);
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+  }
+
+  .administrator {
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--whiteColor);
+    margin-top: 10px;
+    margin-left: 200px;
+    padding-left: 15px;
+  }
+  .administrator.admin_margin_left {
+    margin-left: 200px;
+  }
+.administrator .admin {
+    background-color: var(--closeToGreen);
+    color: var(--whiteColor);
+    border-radius: 2px;
+    font-size: .8em;
+    margin-left: 5px;
+    padding: 2px 8px;
+}
+.administrator .linking {
+    font-size: .8em; 
+    margin-left: 5px;
+    color: var(--closeToBell);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY FOR INSIDE NAV BAR */
+@media screen and (max-width: 419px) {
+    .searching .fa-magnifying-glass,
+     .searh_input {
+        display: none;
+     }
+.searchbar .star {
+    display: none;
+}
+}
+@media screen and (max-width: 1422px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+}
+@media screen and (max-width: 760px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+}
+@media screen and (max-width: 1018px) {
+ .administrator {
+    margin-left: 0;
+ }   
+}
