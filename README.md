@@ -1,3 +1,7 @@
+[Click Here](https://upward-airlines-corporate-dashboard.netlify.app/)
+<br>
+![Snapshoot of Upward Airlines Corporate Dashboard](assets/images/upward_airlines.PNG)
+<br><br>
  A responsive and interactive dashboard for Upward Airlines, providing a comprehensive overview of key metrics, scorecards, documents, notifications, and system settings.
 
 This HTML code represents a dashboard interface for an airline company called Upward Airlines. The dashboard includes a navbar at the top with various menu options and icons for quick actions. It also contains a side menu for navigation and a main content section displaying charts and data columns.
