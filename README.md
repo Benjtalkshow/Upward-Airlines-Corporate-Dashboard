@@ -1,4 +1,4 @@
-[Click Here](https://upward-airlines-corporate-dashboard.netlify.app/)
+[Click Here To View Project](https://upward-airlines-corporate-dashboard.netlify.app/)
 <br><br>
 ![Snapshoot of Upward Airlines Corporate Dashboard](assets/images/upward_airlines.PNG)
 <br><br>
