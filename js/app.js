@@ -12,6 +12,7 @@ function glassClickOne() {
     } else {
         const search = document.querySelector('.search')
         search.style.display = 'none';
+        search.value = "";
         glass.classList.add('glass')
     }
 }
