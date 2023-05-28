@@ -159,6 +159,9 @@
   .administrator {
     margin-left: 0;
   }
+  .searching .fa-magnifying-glass {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 760px) {

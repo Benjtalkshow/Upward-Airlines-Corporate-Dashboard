@@ -31,3 +31,28 @@ function openDiv(sidedrop, theindex) {
         })
     })
 }
+
+
+sideDrop.forEach((sidedrop) => {
+    sidedrop.addEventListener('click', () => {
+        function next(elem) {
+            return elem.nextElementSibling;
+        }
+        let nextEl = next(sidedrop);
+        if (nextEl.classList.contains('display')) {
+            nextEl.style.display = 'none';
+            nextEl.classList.remove('display')
+            // console.log(nextEl);
+        } else {
+            const ul = document.querySelectorAll('.dropDown')
+            ul.forEach((dp) => {
+                dp.style.display = 'none';
+                dp.classList.remove('display')
+
+            })
+            nextEl.style.display = 'block';
+            nextEl.classList.add('display')
+            // console.log(nextEl);
+        }
+    })
+})

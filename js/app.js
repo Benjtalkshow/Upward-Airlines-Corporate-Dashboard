@@ -50,26 +50,31 @@ nav_left_icons.forEach((el) => {
 
 // DROP FUNCTIONALITY FOR THE ICONS ON THE SIDEBAR
 const sideDrop = document.querySelectorAll('.sidedrop')
+const chevron = document.querySelectorAll('.angle')
+
 sideDrop.forEach((sidedrop) => {
     sidedrop.addEventListener('click', () => {
-        function next(elem) {
+        function next(elem, el) {
             return elem.nextElementSibling;
         }
+        let arrowDown = sidedrop.lastElementChild;
         let nextEl = next(sidedrop);
         if (nextEl.classList.contains('display')) {
+            arrowDown.classList.remove('opened')
             nextEl.style.display = 'none';
             nextEl.classList.remove('display')
-            // console.log(nextEl);
         } else {
             const ul = document.querySelectorAll('.dropDown')
             ul.forEach((dp) => {
                 dp.style.display = 'none';
                 dp.classList.remove('display')
-
             })
+            chevron.forEach((chev) => {
+                chev.classList.remove('opened')
+            })
+            arrowDown.classList.add('opened')
             nextEl.style.display = 'block';
             nextEl.classList.add('display')
-            // console.log(nextEl);
         }
     })
 })

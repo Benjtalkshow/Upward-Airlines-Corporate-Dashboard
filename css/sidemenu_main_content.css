@@ -82,13 +82,15 @@
 
 .menu_list li .angle {
     margin-left: auto;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: .5em;
+}
+
+.angle.opened {
+    transform: rotate(-90deg);
+    color: var(--closeToGreen);
     /* transition: opacity 0.3s ease, transform 0.3s ease; */
 }
-.sidedrop.opened .angle {
-    transform: rotate(180deg);
-    color: var(--closeToGreen);
-  }
 
 .menu_list li:hover {
     background-color: var(--closeToBell);
@@ -141,6 +143,5 @@
         transform: translateX(0);
     }
 }
-@media screen and (max-width: 480) {
-    
-}
+
+@media screen and (max-width: 480) {}
