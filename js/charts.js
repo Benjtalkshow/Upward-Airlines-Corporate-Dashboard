@@ -1,24 +1,33 @@
 const ctxs = document.getElementById('myChart');
 new Chart(ctxs, {
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: 'Revenue',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: ['#1ab395', '#f2086d', '#f9962c', '#0b7eca', 'skyblue', 'red'],
-            borderWidth: 1,
-        }]
-    },
-    options: {
-        maintainAspectRation: false,
-        scales: {
-            y: {
-                beginAtZero: true
-            }
+  type: 'bar',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+      label: 'Revenue',
+      data: [12, 19, 3, 5, 2, 3],
+      backgroundColor: ['#1ab395', '#f2086d', '#f9962c', '#0b7eca', 'skyblue', 'red'],
+      borderWidth: 1,
+    }]
+  },
+  options: {
+    maintainAspectRatio: false,
+    scales: {
+      y: {
+        beginAtZero: true,
+        grid: {
+          color: 'skyblue'
         }
+      },
+      x: {
+        grid: {
+          color: 'skyblue'
+        }
+      }
     }
+  }
 });
+
 
 
 // Revenue data
@@ -43,6 +52,9 @@ var revenueChartConfig = {
         scales: {
             y: {
                 beginAtZero: true,
+                grid : {
+                    color: 'skyblue'
+                },
                 title: {
                     display: true,
                     text: 'Revenue ($)'
@@ -52,6 +64,9 @@ var revenueChartConfig = {
                 title: {
                     display: true,
                     text: 'Quarter'
+                },
+                grid : {
+                    color: 'skyblue'
                 }
             }
         }
@@ -84,6 +99,9 @@ var expenseChartConfig = {
         scales: {
             y: {
                 beginAtZero: true,
+                grid: {
+                    color : 'skyblue'
+                },
                 title: {
                     display: true,
                     text: 'Expenses ($)'
@@ -93,7 +111,10 @@ var expenseChartConfig = {
                 title: {
                     display: true,
                     text: 'Month'
-                }
+                },
+                grid: {
+                    color : 'skyblue'
+                },
             }
         }
     }
@@ -258,6 +279,9 @@ const totalTimeDataConfig = {
         scales: {
             y: {
                 beginAtZero: true,
+                grid: {
+                    color : 'skyblue'
+                },
                 title: {
                     display: true,
                     text: 'Time (minutes)',
@@ -723,9 +747,15 @@ const populationServedConfig = {
         scales: {
             y: {
                 beginAtZero: true,
+                grid: {
+                    color : 'skyblue'
+                },
             },
             x: {
                 beginAtZero: true,
+                grid: {
+                    color : 'skyblue'
+                },
             },
         },
         layout: {
