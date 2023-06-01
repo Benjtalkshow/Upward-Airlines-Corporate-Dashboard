@@ -56,3 +56,27 @@ sideDrop.forEach((sidedrop) => {
         }
     })
 })
+
+
+
+const nxt = document.querySelector('.span_1')
+const prev = document.querySelector('.span_2')
+const cont = document.querySelector('.container')
+const fellow_cont = document.querySelector('.fellow_Container')
+nxt.addEventListener('click', (e) => {
+    e.preventDefault();
+    nxt.classList.add('chn_span_blue_prop')
+    prev.classList.remove('chn_span_blue_prop')
+    cont.style.display = 'grid'
+    fellow_cont.style.display = 'none';
+})
+
+prev.addEventListener('click', (e) => {
+    e.preventDefault();
+    prev.classList.add('chn_span_blue_prop')
+    nxt.classList.remove('chn_span_blue_prop')
+    nxt.classList.add('chn_span_white_prop')
+    cont.style.display = 'none'
+    fellow_cont.style.display = 'flex';
+})
+

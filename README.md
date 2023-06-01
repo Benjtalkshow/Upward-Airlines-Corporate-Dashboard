@@ -6,6 +6,7 @@
 - **JAVASCRIPT**
 - **Font Awesome**
 - **ChartJs**
+- **VScode**
 
 ![Snapshoot of Upward Airlines Corporate Dashboard](assets/images/upward_coperate_airlines.PNG)
 <br><br>

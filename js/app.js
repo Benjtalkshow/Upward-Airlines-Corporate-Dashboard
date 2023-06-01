@@ -7,7 +7,9 @@ const nav_right_icons = document.querySelectorAll('.fa-right-icon');
 function glassClickOne() {
     if (glass.classList.contains('glass')) {
         const search = document.querySelector('.search')
+        const searcch = document.querySelector('.search_input')
         search.style.display = 'block';
+        searcch.style.display = 'none';
         glass.classList.remove('glass')
     } else {
         const search = document.querySelector('.search')
@@ -20,6 +22,8 @@ function glassClickTwo() {
     const ga = document.querySelector('.fa-magnifying-glass')
     if (ga.classList.contains('glass')) {
         const search = document.querySelector('.search_input')
+        const searcch = document.querySelector('.search')
+        searcch.style.display = 'none';
         search.style.display = 'block';
         ga.classList.remove('glass')
     } else {
@@ -28,6 +32,19 @@ function glassClickTwo() {
         ga.classList.add('glass')
     }
 }
+
+const searchInputs = document.querySelectorAll('.input');
+
+searchInputs.forEach((input) => {
+  input.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+      const searchText = e.target.value;
+      window.alert(`You pressed Enter after typing: "${searchText}". Unfortunately, the database is not connected!`);
+    }
+  });
+});
+
+
 
 // DROP DOWN FUNCTIONALITY FOR THE NAVBAR ICONS SUCH AS SCORECARDS, MAPS, OBJECTIVES ETC
 nav_left_icons.forEach((el) => {
@@ -133,6 +150,49 @@ bar.addEventListener('click', () => {
     }
 });
 
+//NEXT AND PREVIOUS FOOTER BUTTON
+var nxt = document.querySelector('.span_1');
+var prev = document.querySelector('.span_2');
+var cont = document.querySelector('.container');
+var fellow_cont = document.querySelector('.fellow_Container');
 
+function setSelectedButton(button) {
+  localStorage.setItem('selectedButton', button);
+}
 
+function getSelectedButton() {
+  return localStorage.getItem('selectedButton');
+}
 
+function handleButtonClick(e, button) {
+  e.preventDefault();
+  setSelectedButton(button);
+  
+  if (button === 'nxt') {
+    nxt.classList.add('chn_span_blue_prop');
+    prev.classList.remove('chn_span_blue_prop');
+    cont.style.display = 'grid';
+    fellow_cont.style.display = 'none';
+  } else if (button === 'prev') {
+    prev.classList.add('chn_span_blue_prop');
+    nxt.classList.remove('chn_span_blue_prop');
+    nxt.classList.add('chn_span_white_prop');
+    cont.style.display = 'none';
+    fellow_cont.style.display = 'flex';
+  }
+}
+
+nxt.addEventListener('click', function(e) {
+  handleButtonClick(e, 'nxt');
+});
+
+prev.addEventListener('click', function(e) {
+  handleButtonClick(e, 'prev');
+});
+
+var selectedButton = getSelectedButton();
+if (selectedButton === 'nxt') {
+  handleButtonClick(new Event('click'), 'nxt');
+} else if (selectedButton === 'prev') {
+  handleButtonClick(new Event('click'), 'prev');
+}

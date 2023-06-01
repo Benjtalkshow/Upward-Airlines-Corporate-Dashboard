@@ -71,13 +71,23 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
+.fellow_Container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--closeToBlue);
+}
+.fellow_Container h1 {
+  font-size: 2em;
+}
 
 .container .col {
   background-color: #f0f0f0;
 }
 
 .container .col-1 {
-  height: 250px ;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,6 +99,7 @@
   height: 100%;
   background-color: var(--whiteColor);
 }
+
 /* .chart-description {
   font-size: 14px;
   margin-bottom: 10px;
@@ -114,6 +125,7 @@
   -o-object-fit: cover;
   -o-object-position: center;
 }
+
 .swipe {
   display: flex;
   justify-content: center;
@@ -126,19 +138,25 @@
   display: block;
   text-align: center;
   padding: 5px 8px;
-  background-color: var(--closeToBlue);
   cursor: pointer;
-  color: var(--whiteColor);
 }
 
 .swipe .span_2 {
   display: block;
   text-align: center;
   padding: 5px 8px;
-  background-color: var(--whiteColor);
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   cursor: pointer;
+}
+
+.chn_span_white_prop {
+  background-color: var(--whiteColor);
+  color: #000;
+}
+.chn_span_blue_prop {
+background-color: var(--closeToBlue);
+color: var(--whiteColor);
 }
 
 .administrator {
@@ -181,6 +199,7 @@
   .administrator {
     margin-left: 0;
   }
+
   .searching .fa-magnifying-glass {
     display: none;
   }

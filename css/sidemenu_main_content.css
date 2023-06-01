@@ -58,6 +58,7 @@
 .menu_list li .back_i {
     margin-left: 20px;
 }
+
 .menu_list .dropDown {
     border-left: 4px solid var(--closeToGreen);
     transition: ease-in-out .5s;
@@ -147,4 +148,8 @@
     }
 }
 
-@media screen and (max-width: 480) {}
+/* @media screen and (max-width: 480px) {
+    .fellow_container h1 {
+        font-size: .5em;
+    }
+} */

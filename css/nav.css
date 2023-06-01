@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
 }
+
 @font-face {
     font-family: 'Open Sans';
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -27,6 +28,7 @@ body {
     --greenColor: green;
     --redColor: red;
 }
+
 /* NAVBAR STYLING */
 .navbar {
     position: fixed;
@@ -44,25 +46,28 @@ body {
     padding: 5px;
     border-radius: 2px;
 }
+
 .navbar .left-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .left-nav .fa-bars {
-    z-index: 99 ;
+    z-index: 99;
     cursor: pointer;
 }
 
 .left-nav input {
-padding: 5px;
-border: 2px solid var(--closeToGreen);
-outline: none;
-margin-right: 8px;
-display: none;
-transition: ease-in 1s;
+    padding: 5px;
+    border: 2px solid var(--closeToGreen);
+    outline: none;
+    margin-right: 8px;
+    display: none;
+    transition: ease-in 1s;
 }
-.left-nav  ul {
+
+.left-nav ul {
     top: 3.8em;
     width: fit-content;
     position: absolute;
@@ -70,27 +75,32 @@ transition: ease-in 1s;
     display: none;
     transition: transform 0.5s all;
 }
+
 .left-nav ul li {
     padding: 5px 1.5em;
     text-align: left;
     list-style: none;
     color: var(--whiteColor);
-    
+
 }
+
 .left-nav ul li:hover {
     background-color: var(--Ashes);
 }
+
 .navbar .fa-bars {
     margin-right: 8px;
     padding: 8px;
-     background-color: var(--closeToGreen);
+    background-color: var(--closeToGreen);
 }
+
 .navbar .fa-magnifying-glass {
     margin-right: 8px;
     padding: 8px;
     cursor: pointer;
-    background-color: var(--closeToBlue);  
+    background-color: var(--closeToBlue);
 }
+
 .navbar .left-nav div i {
     padding-right: 2px;
 }
@@ -102,10 +112,12 @@ transition: ease-in 1s;
     color: var(--Bell);
     background-color: var(--Ashes);
 }
+
 .navbar .left-nav .measures-span {
     color: var(--whiteColor);
     background-color: var(--closeToGreen);
 }
+
 .navbar .left-nav .fa-left-icon {
     cursor: pointer;
 }
@@ -116,18 +128,22 @@ transition: ease-in 1s;
     flex-direction: row;
     align-items: center;
 }
+
 .navbar .right-nav i {
     padding: 5px;
-    margin-right:8px ;
+    margin-right: 8px;
     border-radius: 2px;
 }
+
 .navbar .right-nav .fa-right-from-bracket {
     background-color: var(--closeToGreen);
 }
+
 .navbar .right-nav .launch {
     padding: 5px;
     background-color: var(--closeTorange);
 }
+
 .navbar .right-nav span {
     margin-right: 18px;
     padding: 5px;
@@ -135,6 +151,7 @@ transition: ease-in 1s;
     color: var(--whiteColor);
     background-color: var(--Cs);
 }
+
 .navbar .right-nav .fa-right-icon {
     cursor: pointer;
 }
@@ -177,10 +194,12 @@ transition: ease-in 1s;
 }
 
 @media screen and (max-width: 378px) {
+
     .navbar .right-nav .fa-right-from-bracket,
     .launch {
         display: none;
     }
+
     .navbar .right-nav .launch {
         display: none;
     }
