@@ -6,7 +6,7 @@
 }
 
 .sidemenu {
-    width: 200px;
+    width: 250px;
     height: 100%;
     margin-top: 3.8em;
     position: fixed;
@@ -20,13 +20,13 @@
     background-color: var(--Ashes);
     padding: 15px;
     margin-top: 3.8em;
-    margin-left: 200px;
+    margin-left: 250px;
     /* transform: translateX(200px); */
     transition: margin-left .3s ease-in-out;
 }
 
 .mainContent.margin_left {
-    margin-left: 200px;
+    margin-left: 250px;
     /* transform: translateX(200px); */
 }
 
@@ -49,13 +49,15 @@
 .menu_list li {
     list-style: none;
     color: var(--whiteColor);
-    padding: 15px;
+    padding: 20px 15px;
     display: flex;
     position: relative;
     cursor: pointer;
 }
 
-
+.menu_list li .back_i {
+    margin-left: 20px;
+}
 .menu_list .dropDown {
     border-left: 4px solid var(--closeToGreen);
     transition: ease-in-out .5s;
@@ -121,6 +123,7 @@
     list-style: none;
     padding: 15px;
     color: var(--whiteColor);
+    margin-left: 20px;
 }
 
 /* MEDIA QUERY FOR THE SIDE BAR MENU */

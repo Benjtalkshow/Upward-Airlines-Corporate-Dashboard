@@ -1,6 +1,13 @@
 [Click Here To View Project](https://upward-airlines-corporate-dashboard.netlify.app/)
 <br><br>
-![Snapshoot of Upward Airlines Corporate Dashboard](assets/images/upward_airlines.PNG)
+## Tools
+- **HTML**
+- **CSS**
+- **JAVASCRIPT**
+- **Font Awesome**
+- **ChartJs**
+
+![Snapshoot of Upward Airlines Corporate Dashboard](assets/images/upward_coperate_airlines.PNG)
 <br><br>
  A responsive and interactive dashboard for Upward Airlines, providing a comprehensive overview of key metrics, scorecards, documents, notifications, and system settings.
 
