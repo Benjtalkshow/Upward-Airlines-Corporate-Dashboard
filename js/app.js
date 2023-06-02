@@ -139,13 +139,13 @@ bar.addEventListener('click', () => {
         if (getComputedStyle(bar).backgroundColor === 'rgb(26, 179, 149)') {
             menu.classList.add('displayed');
             // mainContent.classList.add('margin_left');
-            adminSection.classList.add('admin_margin_left')
+            // adminSection.classList.add('admin_margin_left')
             bar.style.backgroundColor = '#f9962c';
         } else {
             menu.classList.remove('displayed');
             bar.style.backgroundColor = '#1ab395';
             // mainContent.classList.remove('margin_left');
-            adminSection.classList.remove('admin_margin_left')
+            // adminSection.classList.remove('admin_margin_left')
         }
     }
 });
